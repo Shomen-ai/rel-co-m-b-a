@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@theme {
+  --color-primary: #00bfa3;
+  --color-dark: #080817;
+  --color-light: #F2F4F8;
+  --color-lightBg: #F2F4F8;
+}
+
+body {
+  background-color: var(--color-lightBg);
+  font-family: 'Inter', sans-serif;
+  color: var(--color-dark);
+}
+
+@layer components {
+  .shadow-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+}
